@@ -181,9 +181,11 @@
 @media (max-width:720px) {
 html.no-scroll{
     overflow-y: auto;
+    height: auto;
 }
 
 body.no-scroll{
     overflow-y: auto;
+    height: auto;
 }
 }
