@@ -219,27 +219,6 @@
 }
 /* End section one */
 
-@media (max-width:720px) {
-html.no-scroll{
-    overflow-y: auto;
-    height: auto;
-}
-
-body.no-scroll{
-    overflow-y: auto;
-    height: auto;
-}
-
-.left-header .section-two .inner-picture-main{
-    margin-bottom: 200px;
-    margin-left: 140px;
-}
-
-.left-header .section-two .inner-title-main{
-    margin-top: 100px;
-}
-}
-
 
 /* section two */
 .section-two .inner-center .inner-picture-main .avatar-wrapper img{ 
@@ -270,8 +249,9 @@ body.no-scroll{
 }
 
 
+/* End section two */
 
-@media (max-width:719.98px) {
+@media (max-width:720.98px) {
 html.no-scroll{
     overflow-y: auto;
     height: auto;
@@ -282,13 +262,57 @@ body.no-scroll{
     height: auto;
 }
 
-.section-two .inner-center .home-hero{
-    margin-bottom: 100px;
+.left-header .section-one .inner-picture-main{
+    margin-top: 50px;
 }
 
-.section-two .inner-center .inner-picture-main .avatar-wrapper{
+.left-header .section-one .inner-title-main{
     margin-top: 100px;
     margin-bottom: 200px;
 }
+
+.left-header .section-two .inner-picture-main{
+    margin-bottom: 200px;
+    margin-left: 140px;
 }
-/* End section two */
+
+.left-header .section-two .inner-title-main{
+    margin-top: 100px;
+}
+}
+
+
+@media (max-width:401.98px) {
+html.no-scroll{
+    overflow-y: auto;
+    height: auto;
+}
+
+body.no-scroll{
+    overflow-y: auto;
+    height: auto;
+}
+
+.left-header .section-one .inner-picture-main{
+    margin-top: 50px;
+}
+
+.left-header .section-one .inner-title-main{
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.left-header .section-two .inner-picture-main{
+    margin-bottom: 200px;
+    margin-left: 45px;
+}
+
+.section-two .inner-center .inner-picture-main .avatar-wrapper img{
+    width: 300px;
+    height: auto;
+}
+
+.left-header .section-two .inner-title-main{
+    margin-top: 100px;
+}
+}
