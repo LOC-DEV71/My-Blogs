@@ -26,6 +26,23 @@
 }
 
 .left-header .inner-wrap .inner-menu .inner-picture {
+  animation: glowing 2s infinite;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0); /* ban đầu không có bóng */
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 5px pink, 0 0 10px rgb(255, 37, 37);
+  }
+  50% {
+    box-shadow: 0 0 20px #0ff, 0 0 40px #00f;
+  }
+  100% {
+    box-shadow: 0 0 5px rgb(249, 249, 70), 0 0 10px rgb(101, 238, 101);
+  }
+}
+
+.left-header .inner-wrap .inner-menu .inner-picture {
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -72,7 +89,14 @@
     height: 650px;
     margin-top: 40px;
     border-radius: 15px;
+    position: relative;
+    display: inline-block;
 }
+
+.inner-picture-main .avatar {
+  display: block;
+}
+
 
 .inner-picture-main::after {
   content: '';
@@ -138,4 +162,20 @@
 .left-header .section-one .inner-title-main .btn-main{
     text-decoration: none;
 }
+
+
+.section-one {
+    position: relative;
+}
+.logo img{
+    width: 50px;
+}
+
+.logo{
+    position: absolute;
+    right: 50px;
+    bottom: 650px;
+}
 /* End section one */
+
+
