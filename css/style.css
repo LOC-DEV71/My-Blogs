@@ -210,6 +210,7 @@
 .fa-instagram{
     background: linear-gradient(to bottom, rgb(251, 0, 163), rgb(255, 255, 98));
     border: 2px solid rgb(251, 0, 163);
+    color: white;
 }
 
 .fa-tiktok{
