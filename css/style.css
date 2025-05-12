@@ -315,4 +315,12 @@ body.no-scroll{
 .left-header .section-two .inner-title-main{
     margin-top: 100px;
 }
+
+.left-header .inner-wrap .inner-menu nav {
+    margin-top: -10px;
+}
+
+.left-header .inner-wrap .inner-menu .inner-picture{
+    margin-top: 30px;
+}
 }
