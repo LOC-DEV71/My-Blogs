@@ -32,13 +32,13 @@
 
 @keyframes glowing {
   0% {
-    box-shadow: 0 0 5px pink, 0 0 10px rgb(255, 37, 37);
+    box-shadow: 0 0 15px white, 0 0 15px #0ff;
   }
   50% {
-    box-shadow: 0 0 20px #0ff, 0 0 40px #00f;
+    box-shadow: 0 0 20px #0ff, 0 0 40px white;
   }
   100% {
-    box-shadow: 0 0 5px rgb(249, 249, 70), 0 0 10px rgb(101, 238, 101);
+    box-shadow: 0 0 5px white, 0 0 10px #0ff;
   }
 }
 
@@ -60,7 +60,7 @@
 }
 
 .left-header .inner-wrap .inner-menu nav ul li {
-    padding: 10px;
+    padding: 10px 30px;
     list-style-type: none;
     cursor: pointer;
     text-align: center;
@@ -74,13 +74,17 @@
 
 .left-header .inner-wrap .inner-menu nav ul li:hover {
     background: var(--color-button-main);
-    border-radius: 8px;
-    color: var(--color-text-extra);
+    border-radius: 20px;
+    background: linear-gradient(to right,rgb(108, 219, 253), rgb(245, 148, 177));
+    font-weight: 620;
+    box-shadow: 0 0 20px white;
 }
+
+
 
 .left-header .inner-wrap .inner-menu .inner-title {
     text-align: center;
-    margin-top: 170px;
+    margin-top: 270px;
 }
 
 /* section one */
@@ -156,7 +160,7 @@
 
 .left-header .section-one .inner-title-main .btn-hover {
     background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
-    box-shadow: 0 0 10px var(--color-text-main);
+    box-shadow: 0 0 30px rgb(127, 216, 254);
 }
 
 .left-header .section-one .inner-title-main .btn-main{
@@ -176,6 +180,43 @@
     right: 50px;
     bottom: 650px;
 }
+
+.section-one .inner-main .inner-center .inner-icon{
+    margin-top: 70px;
+}
+
+.section-one .inner-main .inner-center .inner-icon a{
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+.section-one .inner-main .inner-center .inner-icon a i{
+    padding: 8px 10px;
+    border-radius: 15px;
+}
+
+.section-one .inner-main .inner-center .inner-icon a i:hover{
+    box-shadow: 0 0 40px white;
+    border: 2px solid white;
+    border-radius: 15px;
+}
+
+.fa-facebook{
+    color: rgb(32, 32, 255);
+    border: 2px solid white;
+    background: white;
+}
+
+.fa-instagram{
+    background: linear-gradient(to bottom, rgb(251, 0, 163), rgb(255, 255, 98));
+    border: 2px solid rgb(251, 0, 163);
+}
+
+.fa-tiktok{
+    background: black;
+    border: 2px solid black;
+    color: white;
+}
 /* End section one */
 
 @media (max-width:720px) {
@@ -188,4 +229,42 @@ body.no-scroll{
     overflow-y: auto;
     height: auto;
 }
+
+.left-header .section-one .inner-picture-main{
+    margin-bottom: 100px;
 }
+
+.left-header .section-one .inner-title-main{
+    margin-bottom: 200px;
+}
+}
+
+
+/* section two */
+.section-two .inner-center .inner-picture-main .avatar-wrapper img{ 
+    width: 450px;
+    margin-top: 140px;
+    height: auto; /* Đảm bảo ảnh không bị kéo dãn chiều cao */
+    border-radius: 50%;
+    border: 10px solid rgb(6, 243, 247);
+    box-shadow: 0 0 30px rgb(6, 243, 247);
+}
+
+.section-two .inner-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-two .inner-center .home-hero{
+    text-align: center;
+}
+
+.section-two .inner-center .home-hero .title{
+    color: var(--color-text-main);
+}
+
+.section-two .inner-center .home-hero .desc{
+    color: var(--color-text-extra);
+}
+/* End section two */
