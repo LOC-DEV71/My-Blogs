@@ -178,4 +178,12 @@
 }
 /* End section one */
 
+@media (max-width:720px) {
+html.no-scroll{
+    overflow-y: none;
+}
 
+body.no-scroll{
+    overflow-y: none;
+}
+}
