@@ -230,12 +230,13 @@ body.no-scroll{
     height: auto;
 }
 
-.left-header .section-one .inner-picture-main{
-    margin-bottom: 100px;
+.left-header .section-two .inner-picture-main{
+    margin-bottom: 200px;
+    margin-left: 140px;
 }
 
-.left-header .section-one .inner-title-main{
-    margin-bottom: 200px;
+.left-header .section-two .inner-title-main{
+    margin-top: 100px;
 }
 }
 
@@ -266,5 +267,28 @@ body.no-scroll{
 
 .section-two .inner-center .home-hero .desc{
     color: var(--color-text-extra);
+}
+
+
+
+@media (max-width:719.98px) {
+html.no-scroll{
+    overflow-y: auto;
+    height: auto;
+}
+
+body.no-scroll{
+    overflow-y: auto;
+    height: auto;
+}
+
+.section-two .inner-center .home-hero{
+    margin-bottom: 100px;
+}
+
+.section-two .inner-center .inner-picture-main .avatar-wrapper{
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
 }
 /* End section two */
