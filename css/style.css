@@ -180,10 +180,10 @@
 
 @media (max-width:720px) {
 html.no-scroll{
-    overflow-y: none;
+    overflow-y: auto;
 }
 
 body.no-scroll{
-    overflow-y: none;
+    overflow-y: auto;
 }
 }
