@@ -132,7 +132,7 @@
     margin-bottom: 50px;
 }
 
-.left-header .section-one .inner-title-main .btn-hover {
+.btn-hover {
     font-size: 16px;
     font-weight: 600;
     color: #fff;
@@ -149,7 +149,7 @@
     transition: all .4s ease-in-out;
     padding: 20px 40px;
 }
-.left-header .section-one .inner-title-main .btn-hover:hover {
+.btn-hover:hover {
     background-position: 100% 0;
     moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
@@ -157,13 +157,12 @@
     transition: all .4s ease-in-out;
     color: var(--color-text-main);
 }
-
-.left-header .section-one .inner-title-main .btn-hover {
+.btn-hover {
     background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
     box-shadow: 0 0 30px rgb(127, 216, 254);
 }
 
-.left-header .section-one .inner-title-main .btn-main{
+.section-one .btn-main{
     text-decoration: none;
 }
 
@@ -222,35 +221,349 @@
 
 
 /* section two */
-.section-two .inner-center .inner-picture-main .avatar-wrapper img{ 
-    width: 450px;
-    margin-top: 140px;
+.section-two .inner-top .inner-picture img{ 
+    width: 240px;
+    margin-top: 50px;
+    margin-left: 120px;
     height: auto; /* Đảm bảo ảnh không bị kéo dãn chiều cao */
     border-radius: 50%;
     border: 10px solid rgb(6, 243, 247);
     box-shadow: 0 0 30px rgb(6, 243, 247);
 }
 
-.section-two .inner-center{
+.section-two .inner-top{
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.section-two .inner-top .inner-son{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    color: rgb(6, 243, 247);
+}
+
+.section-two .inner-skill{
+    position: relative;
+}
+
+.section-two .inner-skill .inner-son{
+    position: absolute;
+    left: 20px;
+    color: rgb(6, 243, 247);
+}
+
+.section-two .inner-top{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.section-two .inner-center .home-hero{
+.section-two .inner-top .inner-title{
     text-align: center;
 }
 
-.section-two .inner-center .home-hero .title{
-    color: var(--color-text-main);
+.section-two .inner-top .inner-title .title{
+    font-size: 30px;
+    color: var(--color-text-main)
 }
 
-.section-two .inner-center .home-hero .desc{
+.section-two .inner-top .inner-title .desc{
+    font-size: 14px;
     color: var(--color-text-extra);
 }
 
 
+.section-two .inner-skill .skill-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 10px 5px;
+    border: 2px solid rgb(6, 243, 247);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+.section-two .inner-skill .skill-card:hover{
+    text-shadow: 0 0 10px #06f3f7, 0 0 20px #06f3f7;
+    transform: scale(1.09);
+    box-shadow: 0 0 10px rgb(6, 243, 247), 0 0 15px rgb(6, 243, 247);
+}
+
+.section-two .inner-skill .skill-card i{
+    font-size: 40px;
+}
+
+.section-two .inner-skill .skill-card span{
+    margin-left: 10px;
+    color: var(--color-text-main);
+}
+
+.section-two .inner-skill .skill-card .fa-css3-alt{
+    color: blue;
+}
+
+.section-two .inner-skill .skill-card .fa-html5{
+    color: orange;
+}
+
+.section-two .inner-skill .skill-card .fa-js{
+    color: yellow;
+}
+
+.section-two .inner-skill .skill-card .fa-square-github{
+    color: rgb(123, 123, 123);
+}
+
+.section-two .inner-skill .skill-card .fa-square-gitlab{
+    color: rgb(251, 189, 74);
+}
+
+.section-two .inner-skill .skill-card .fa-square-git{
+    color: rgb(216, 142, 5);
+}
+
+.section-two .inner-skill .skill-card .fa-react{
+    color: rgb(46, 143, 248);
+}
+
+.section-two .inner-skill .skill-card .fa-bootstrap{
+    color: rgb(1, 37, 75);
+}
+
+.section-two .inner-skill .skill-card .fa-java{
+    color: white;
+}
 /* End section two */
+
+/* section three */
+.section-three .inner-main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.section-three .inner-main .inner-title{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    max-width: 900px;
+    margin-left: 150px;
+}
+
+.section-three .inner-main .inner-title h1{
+    color: var(--color-text-main);
+    font-size: 40px;
+}
+
+.section-three .inner-main .inner-title p{
+    color: var(--color-text-extra);
+}
+
+.section-three .inner-main .inner-project .inner-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-three .inner-main .inner-project .project{
+    width: 300px;
+    height: 200px;
+    margin-right: 100px;
+    position: relative;
+    margin-top: 50px;
+}
+
+
+.section-three .inner-main .inner-project .project img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid rgb(97, 250, 255);
+    box-shadow: 0 0 15px rgb(97, 250, 255), 0 0 20px rgb(97, 250, 255);
+}
+
+.section-three .inner-main .inner-project .project::before{
+    content: "";
+    position: absolute;
+    top: 81px; /* Sửa lại top để đen phủ toàn bộ ảnh */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; /* Thêm transition để mượt mà */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.section-three .inner-main .inner-project .project:hover::before{
+    opacity: 1; /* Khi hover, opacity của before thay đổi */
+}
+
+.section-three .inner-main .inner-project .project img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.section-three .inner-main .inner-project .project .title-h5{
+    position: absolute;
+    top: 50%; /* Căn giữa văn bản */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Đảm bảo văn bản hiển thị trên background */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; /* Thêm transition cho opacity của văn bản */
+}
+
+.section-three .inner-main .inner-project .project:hover .title-h5,
+.section-three .inner-main .inner-project .project:hover .desc{
+    opacity: 1; /* Khi hover, opacity của văn bản thay đổi */
+}
+
+
+.section-three .inner-main .inner-project .project-one .child-one{
+    position: absolute;
+    top: 110px;
+}
+
+.section-three .inner-main .inner-project .project-one .child-two{
+    position: absolute;
+    top: 150px;
+}
+
+.section-three .inner-main .inner-project .title-h5{
+    color: var(--color-text-main);
+    z-index: 2;
+    transform: translateX(60%);
+}
+
+.section-three .inner-main .inner-project .desc{
+    color: var(--color-text-extra);
+    z-index: 2;
+    opacity: 0;
+}
+
+.section-three .inner-picture h1{
+    font-size: 40px;
+    color: var(--color-text-main);
+}
+
+.section-three .inner-picture{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-three .inner-main .inner-title .inner-contact a{
+    color: var(--color-text-main);
+    font-weight: 610;
+    text-decoration: none;
+    padding: 15px 25px;
+
+} 
+
+
+/* End section three */
+
+
+/* section contact */
+.section-contact{
+    margin-top: 100px;
+}
+
+.section-contact .inner-main .inner-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    width: 800px;
+    border-radius: 10px;
+    margin-left: 220px;
+    box-shadow: 0 0 30px rgb(98, 221, 255), 0 0 40px rgb(98, 221, 255);
+}
+
+.section-contact .inner-main .inner-wrap video{
+    width: 200px;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.section-contact .inner-main .inner-form{
+    width: 600px;
+    height: 355.55px;
+    text-align: center;
+}
+
+.section-contact .inner-main .inner-form .wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.section-contact .inner-main .inner-form .wrap input{
+    width: 350px;
+    padding: 10px;
+    border-radius: 25px;
+    margin-bottom: 15px;
+}
+
+.section-contact .inner-main .inner-form .wrap textarea{
+    width: 350px;
+    height: auto;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.section-contact .inner-main .inner-form .wrap .btn-main{
+    width: 350px;
+    border-radius: 20px;
+    font-weight: 610;
+    color: var(--color-text-main);
+}
+
+.section-contact .inner-main .inner-form .wrap .btn-hover {
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.section-contact .inner-main .inner-form .wrap .btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    color: var(--color-text-main);
+}
+.section-contact .inner-main .inner-form .wrap .btn-hover {
+    background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+    box-shadow: 0 0 15px rgb(127, 216, 254);
+}
+
+
+.section-contact h2{
+    text-align: center;
+    color: var(--color-text-main);
+}
+
+.section-contact p{
+    text-align: center;
+    color: var(--color-text-extra);
+    margin-bottom: 40px;
+}
+/* End section contact */
+
 
 @media (max-width:720.98px) {
 html.no-scroll{
