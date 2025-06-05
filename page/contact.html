@@ -73,7 +73,7 @@
                                         <input type="email" placeholder="Enter your email" class="email" required>
                                         <input type="text" placeholder="Your name" class="name" required>
                                         <textarea name="" id="" placeholder="Write your request here" class="area" rows="2"></textarea>
-                                        <button type="submit" class="btn-main btn-hover">SEND ME</button>
+                                        <button type="submit" class="btn-main btn-hover" id="button">SEND ME</button>
                                     </div>
                                 </form>
                             </div>
@@ -83,6 +83,19 @@
             </div>
         </div>
     </div>
+
+
+    <script>
+
+        const button = document.querySelector("#button");
+
+        button.onclick = function(){
+            alert("Message sent successfully");
+        }
+
+    </script>
+
+
 
 
 

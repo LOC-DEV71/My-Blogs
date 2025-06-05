@@ -284,6 +284,7 @@
     border: 2px solid rgb(6, 243, 247);
     border-radius: 20px;
     cursor: pointer;
+    box-shadow: 0 0 10px rgb(6, 243, 247);
     transition: all 0.3s ease;
 
 }
@@ -561,6 +562,11 @@
     text-align: center;
     color: var(--color-text-extra);
     margin-bottom: 40px;
+}
+
+.section-contact .inner-form .inner-wrap .background{
+    background: rgb(52, 52, 52);
+    color: white;
 }
 /* End section contact */
 
